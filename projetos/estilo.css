@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('./fontes/IDroid.otf') format('opentype');
+    font-weight: normal;
+    
+}
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte4: 'Arial';
+    --fonte5: 'Android', cursive;
+
+}
+html, body {
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #252323;
+    color: white;
+}
+
+header h1 {
+    padding-top: 50px;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3.5em;
+}
+header p a {
+    text-decoration: none;
+    color: white;
+}
+header p {
+    padding-bottom: 20px;
+    text-align: center;
+}
+header ul {
+    padding-bottom: 10px;
+}
+header ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+header ul li a {
+    color: #c5c5c5;
+    font-family: var(--fonte1);
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul li a:hover {
+    color: #00bac6;
+    background-color: #383636;
+    padding: 4px;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.6em;
+    padding-left: 30px;
+    font-size: 1.3em;
+    
+    
+}
+
+section.normal {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(109, 109, 109);
+    
+}
+section.normal strong {
+    color: rgb(85, 85, 85);
+}
+section.normal h1 {
+    color: rgb(70, 70, 70);
+    font-family: var(--fonte4);
+    padding-bottom: 25px;
+    
+}
+section.normal .portfolio {
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    text-align: center;
+    padding: 10px;
+    width: 31%;
+}
+section.normal .portfolio a {
+    color: black;
+    text-decoration: none;
+}
+section.normal .portfolio a:hover {
+    color: rgb(0, 234, 255);
+    transition-duration: 1s;
+    text-decoration: none;
+
+}
+section.normal .portfolio:hover {
+    transition-duration: 1s;
+    background-color: #e9fffe;
+}
+section.normal .calculadora {
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+}
+section.normal .calculadora:hover {
+    transition-duration: 0.6s;
+    background-color: #e7e7e7;
+}
+section.normal .calculadora a {
+    color: black;
+    transition-duration: 0.6s;
+    text-decoration: none;
+}
+section.normal .calculadora a:hover {
+    color: rgb(44, 248, 255);
+}
+section.normal .calculadora img {
+    width: 30px;
+    
+}
+section#android h1 {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.315);
+    font-family:var(--fonte5);
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5px;
+    width: 36.9%;
+}
+
+section#android .bau {
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    text-align: center;
+    padding: 10px;
+    width: 36.2%;
+    
+}
+section#android .bau:hover {
+    transition-duration: 1s;
+    width: 36.3%;
+    background-color: rgba(0, 0, 0, 0.438);
+    
+}
+section#android .bau a {
+    color: white;
+    text-decoration: none;
+}
+section#android .bau a:hover{
+    transition-duration: 1s;
+    color: #00ffbf;
+    
+    
+}
+section.img {
+    background-color: rgb(116, 116, 116);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    background-attachment: fixed;
+}
+section.img > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.281);
+    text-shadow: 1px 1px 0px black;
+}
+section > p {
+    padding-bottom: 2em;
+}
+
+section#android {
+    background-image: url('../imagens/android2.png');
+    background-position: left center;
+    background-size: cover;
+
+}
+section#cordel {
+    background-image: url('../imagens/literatura.jpeg');
+    background-position:  center;
+    background-size: cover;
+
+}
+section#cordel h1 {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.315);
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+    width: 32%;
+}
+section.img p a {
+    color: white;
+    text-decoration: none;
+}
+section.img p a:hover {
+    text-decoration: underline;
+}
+section.img .livro {
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    text-align: center;
+    padding: 10px;
+    width: 31.3%;
+}
+section.img .livro:hover {
+    transition-duration: 1s;
+    background-color: #7c6c6c71;
+}
+section.img .livro a {
+    color: rgb(252, 252, 252);
+    transition-duration: 0.6s;
+    text-decoration: none;
+}
+section.img .livro a:hover {
+    color: rgba(80, 80, 80, 0.747);
+}
+
+section.img .livro img {
+    width: 30px;
+    height: 30px;
+}
+section.normal .portfolio img {
+    width: 30px;
+    height: 26px;
+}
+section.img img{
+    width: 40px;
+    height: 20px;
+}
+footer {
+    background-color: #252323;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #00bac6;
+}
